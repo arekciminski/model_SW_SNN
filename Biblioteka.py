@@ -38,6 +38,7 @@ class Epa:
             ret, nx = et.ENgetnodeindex(nn)
             node_index.append(nx)
             self.node_index = node_index
+
         tank_index=[]
         for nn in self.parameters['tanks_names']:
             ret, nx = et.ENgetnodeindex(nn)
@@ -50,6 +51,7 @@ class Epa:
             ret, px = et.ENgetpatternindex(pn)
             pattern_index.append(px)
         self.pumps_pattern_index = pattern_index
+
         pattern_index=[]
         for pn in self.parameters['demand_patterns']:
             ret, px = et.ENgetpatternindex(pn)
