@@ -1,0 +1,135 @@
+[TITLE]
+
+[JUNCTIONS]
+ 2                      10.00
+ 3                      10.00
+ 4                      10.00
+ 5                       5.00
+ 6                       5.00
+
+[RESERVOIRS]
+ 1                      35.00 
+
+[TANKS]
+ 7                      40.00         2.00         0.00         5.00         4.50         0.00 
+
+[PIPES]
+ 2               2               3                     350.00       100.00       100.00       0.0000 
+ 3               2               4                     150.00        80.00       100.00       0.0000 
+ 4               3               5                     150.00        80.00       100.00       0.0000 
+ 5               4               5                     350.00       100.00       100.00       0.0000 
+ 6               4               6                     250.00        60.00       100.00       0.0000 
+ 8               3               7                     350.00       100.00       100.00       0.0000 
+ 7               6               5                    1000.00        60.00       100.00       0.0000 
+
+[PUMPS]
+ 1               1               2                HEAD 1   PATTERN  pompka
+
+[VALVES]
+
+[DEMANDS]
+ 2                       0.00    pompka
+ 3                       0.00    pompka
+ 4                       0.00    pompka
+ 5                       2.00    demand
+ 6                       3.80    demand
+
+[EMITTERS]
+
+[STATUS]
+
+[PATTERNS]
+ demand                0.3000       0.3500       0.4000       0.4000       0.4500       0.5000
+ demand                0.6500       0.7000       0.9000       0.8000       0.7000       0.6500
+ demand                0.6500       0.6000       0.6500       0.7500       0.8500       0.9000
+ demand                0.8000       0.7000       0.6500       0.5500       0.4000       0.3500
+ pompka                0.7331       0.7648       0.7620       0.7842       0.8095       0.8695
+ pompka                0.8832       0.7503       0.9518       0.8071       0.7331       0.9064
+ pompka                0.7762       0.7570       0.7869       0.7961       0.9101       0.9507
+ pompka                0.8073       0.7337       0.7004       0.6762       0.6732       0.8578
+
+[CURVES]
+ 1                    15.0000      10.0000
+
+[CONTROLS]
+
+[QUALITY]
+
+[SOURCES]
+
+[MIXING]
+ 7               MIXED          1.0000
+
+[REACTIONS]
+ ORDER  BULK            1.00
+ ORDER  WALL            1
+ ORDER  TANK            1.00
+ GLOBAL BULK            -20.0000
+ GLOBAL WALL            0.0000
+
+[ENERGY]
+ GLOBAL EFFIC        75.00
+ DEMAND CHARGE       0.0000
+
+[TIMES]
+ DURATION            24:00:00
+ HYDRAULIC TIMESTEP  1:00:00
+ QUALITY TIMESTEP    1:00:00
+ REPORT TIMESTEP     1:00:00
+ REPORT START        0:00:00
+ PATTERN TIMESTEP    1:00:00
+ PATTERN START       0:00:00
+ RULE TIMESTEP       0:06:00
+ START CLOCKTIME     0:00:00
+ STATISTIC           NONE
+
+[OPTIONS]
+ UNITS               LPS
+ PRESSURE            METERS
+ HEADLOSS            H-W
+ PATTERN             pompka
+ UNBALANCED          CONTINUE 10
+ QUALITY             Chlorine mg/L
+ DEMAND MULTIPLIER   1.00
+ EMITTER EXPONENT    0.50
+ VISCOSITY           1.0000
+ DIFFUSIVITY         1.0000
+ SPECIFIC GRAVITY    1.0000
+ TRIALS              40
+ ACCURACY            0.00100000
+ TOLERANCE           0.01000000
+
+[REPORT]
+ PAGESIZE            0
+ STATUS              NO
+ SUMMARY             NO
+ ENERGY              NO
+ NODES               NONE
+ LINKS               NONE
+ Demand              PRECISION 2
+ Head                PRECISION 2
+ Pressure            PRECISION 2
+ Quality             PRECISION 2
+ Flow                PRECISION 2
+ Velocity            PRECISION 2
+ Headloss            PRECISION 2
+[TAGS]
+[RULES]
+[COORDINATES]
+ 2               	1762.97         	7853.77         
+ 3               	3779.48         	7853.77         
+ 4               	1762.97         	6202.83         
+ 5               	3779.48         	6202.83         
+ 6               	2814.57         	4437.09         
+ 1               	182.78          	7853.77         
+ 7               	5441.50         	7814.57         
+[VERTICES]
+[LABELS]
+[BACKDROP]
+ DIMENSIONS     	0.00            	0.00            	10000.00        	10000.00        
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+;
+
+[END]
