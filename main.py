@@ -1,73 +1,31 @@
 from epanettools import epanet2 as et
+
+from Biblioteka import Epa
 import matplotlib.pyplot as plt
 #from GA import solve
 
-ret=et.ENopen("siec_maly_obiekt.inp","Net3.rpt","")
-ret=et.ENopen("chojnice_kwiecien_obiekt.inp","Net3.rpt","")
-et.ENopenH()
-et.ENinitH(0)
-time = []
-nodes=[]
-pres=[]
-head=[]
+print([[0]]*5)
 
-ret,nnodes=et.ENgetcount(et.EN_NODECOUNT)
-ret,npipes=et.ENgetcount(et.EN_NODECOUNT)
-nodes=[]
-links=[]
-pres=[]
-flow =[]
-time=[]
-for index in range(1,nnodes):
-     ret,t=et.ENgetnodeid(index)
-     nodes.append(t)
-     t=[]
-     pres.append(t)
-     head.append(t)
-#print (nodes)
+file_name = "chojnice_kwiecien_obiekt.inp"
+file_name = "siec_maly_obiekt.inp"
 
-for index in range(1,npipes):
-     ret,t=et.ENgetlinkid(index)
-     links.append(t)
-     t=[]
-     flow.append(t)
-#print (links)
+mes_link_name =['1','2']
+mes_node_name =['1','2']
+#pumps_names = ['F1','K1','P1']
+pat_name =['demand','pompka']
+ep = Epa(file_name)
+ep.open_epanet()
+print(ep.get_number_of_links())
+print(ep.get_number_of_nodes())
+print(ep.get_link_number(mes_link_name))
+#print(ep.get_link_number(pumps_names))
+print(ep.get_node_number(mes_node_name))
+print(ep.get_patern_number(pat_name))
+[flow,pressure,head,error,time]=ep.get_hydraulic_values(['flow','pressure','head'])
+ep.close_epanet()
 
-while True :
-    ret,t=et.ENrunH()
-    time.append(t)
-    # Retrieve hydraulic results for time t
-    for  i in range(0,len(links)):
-        ret,p=et.ENgetlinkvalue(i+1, et.EN_FLOW)
-        flow[i].append(p)
-    for  i in range(0,len(nodes)):
-        ret,p=et.ENgetnodevalue(i+1, et.EN_PRESSURE)
-        pres[i].append(p)
+print(len(flow[0]),len(error)*3)
 
-        ret,p=et.ENgetnodevalue(i+1, et.EN_HEAD)
-        head[i].append(p)
-    ret,tstep=et.ENnextH()
-    if (tstep<=0):
-        break
-ret=et.ENcloseH()
 
-fig,ax=plt.subplots()
-plt.plot(1)
-for i in range(0,len(pres)-1):
-    ax.plot(range(0,len(pres[i])),pres[i],label=nodes[i])
-ax.legend()
-plt.show()
 
-fig,ax=plt.subplots()
-plt.plot(2)
-for i in range(0,len(head)-1):
-    ax.plot(range(0,len(head[i])),head[i],label=nodes[i])
-ax.legend()
-plt.show()
 
-fig,ax=plt.subplots()
-plt.plot(3)
-for i in range(0,len(flow)-1):
-    ax.plot(range(0,len(flow[i])),flow[i],label=links[i])
-ax.legend()
-plt.show()
