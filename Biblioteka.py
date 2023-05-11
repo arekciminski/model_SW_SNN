@@ -49,7 +49,6 @@ class Epa:
         for pn in self.parameter['pattern_names']:
             ret, px = et.ENgetpatternindex(pn)
             pattern_index.append(px)
-        print(pattern_index)
         self.pattern_index = pattern_index
 
     def set_time_duration(self):
@@ -68,11 +67,11 @@ class Epa:
         et.ENsaveinpfile('temporary_'+self.parameter['file_name'])
 
     def get_set_parameters(self):
-        ep.get_link_index()
-        ep.get_node_index()
-        ep.get_pattern_index()
-        ep.set_time_duration()
-        ep.set_tank_inital()
+        self.get_link_index()
+        self.get_node_index()
+        self.get_pattern_index()
+        self.set_time_duration()
+        #ep.set_tank_inital()
         #ep.set_patern_values()
         #ep.save_temp_file()
 
@@ -108,23 +107,4 @@ class Epa:
         return flow, pressure, head, error, time
 
 if __name__ == '__main__':
-    parameters = {
-    'file_name' : "siec_maly_obiekt.inp",
-    'mes_link_name' :['1','2'],
-    'mes_node_name':['7'],
-    'pumps_names' : ['pompka'],
-    'pattern_names' :['demand','pompka'],
-    'pattern_values' : [[1],[0.4]],
-    'time_duration': 3600,
-    'tank_names': ['7'],
-    'initial_tanks' : [4],
-    'hydraulic_values': ['flow', 'pressure', 'head']
-    }
-
-    ep = Epa(parameters)
-    ep.open_epanet()
-    ep.get_set_parameters()
-    ep.set_patern_values()
-    [flow, pressure, head, error, time] = ep.get_hydraulic_values()
-    ep.close_epanet()
-    print(pressure)
+    print('To jest biblioteka pomocna przy generowaniu wyników z Epanetu')
