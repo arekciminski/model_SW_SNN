@@ -2,6 +2,7 @@ from epanettools import epanet2 as et
 
 from Biblioteka import Epa
 import numpy as np
+import pandas as pd
 
 file_name = "chojnice_kwiecien_obiekt.inp"
 file_name = "siec_maly_obiekt.inp"
@@ -19,13 +20,14 @@ parameters = {
     'hydraulic_values': ['flow', '', 'head']
 }
 
-pump_input = []
-tank_input = []
-demand_input = []
-flow_output = []
-head_output = []
-tank_output = []
-error_output = []
+data = {'pump_input': [],
+    'tank_input' : [],
+    'demand_input' : [],
+    'flow_output' : [],
+    'head_output' : [],
+    'tank_output' : [],
+    'error_output' : []
+}
 
 
 ep = Epa(parameters)
@@ -39,17 +41,20 @@ for pump_control in np.arange(0.5, 1, 0.01):
             ep.set_tank_inital()
             ep.set_patern_values()
 
-            pump_input.append(pump_control)
-            tank_input.append(tank_init)
-            demand_input.append(demand_par)
+            data['pump_input'].append(pump_control)
+            data['tank_input'].append(tank_init)
+            data['demand_input'].append(demand_par)
 
             [flow, pressure, head, error, time] = ep.get_hydraulic_values()
-            head_output.append(head[0][0])
-            tank_output.append(head[1][0])
-            flow_output.append(flow[0][0])
-            error_output.append(error[0])
+
+            data['head_output'].append(head[0][0])
+            data['tank_output'].append(head[1][0])
+            data['flow_output'].append(flow[0][0])
+            data['error_output'].append(error[0])
 ep.close_epanet()
 
+df = pd.DataFrame(data)
 
+print(df)
 
 
