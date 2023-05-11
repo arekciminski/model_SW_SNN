@@ -1,13 +1,12 @@
 from epanettools import epanet2 as et
+from tqdm import tqdm
+import numpy as np
+
 class Epa:
 
     def __init__(self, parameters):
         self.parameters = parameters
-        self.patern_index = []
-        self.link_index = []
-        self.patern_index = []
-        self.nnodes = []
-        self.nlinks = []
+        self.random={}
 
     def open_epanet(self):
         ret = et.ENopen(self.parameters['file_name'], "Net3.rpt", "")
@@ -31,6 +30,12 @@ class Epa:
             ret, lx = et.ENgetlinkindex(ln)
             link_index.append(lx)
         self.link_index = link_index
+
+        pump_index=[]
+        for ln in self.parameters['pumps_names']:
+            ret, lx = et.ENgetlinkindex(ln)
+            pump_index.append(lx)
+        self.pumps_index = pump_index
 
     def get_node_index(self):
         node_index=[]
@@ -71,7 +76,7 @@ class Epa:
             for j in range(len(self.parameters['demand_pattern_values'][0])):
                 et.ENsetpatternvalue(self.demand_pattern_index[i],j+1,self.parameters['demand_pattern_values'][i][j])
 
-         for i in range(len(self.pumps_pattern_index)):
+         for i in range(self.parameters['num_pumps']):
             for j in range(len(self.parameters['pumps_pattern_values'][0])):
                 et.ENsetpatternvalue(self.pumps_pattern_index[i],j+1,self.parameters['pumps_pattern_values'][i][j])
 
@@ -98,10 +103,13 @@ class Epa:
         for mes_tank in self.parameters['tanks_names']:
             self.data['tank_output_' + mes_tank] = []
 
+        for pumps_name in self.parameters['pumps_names']:
+            self.data['energy_output_' + pumps_name] = []
+
         for tank_input in self.parameters['tanks_names']:
             self.data['tank_input_' + tank_input] = []
 
-        for pump_input in self.parameters['pumps_patterns']:
+        for pump_input in self.parameters['pumps_names']:
             self.data['pump_input_' + pump_input] = []
 
         for demand_input in self.parameters['demand_patterns']:
@@ -112,9 +120,9 @@ class Epa:
         et.ENopenH()
         et.ENinitH(0)
         time=[]
-        flow=[[] for i in range(len(self.link_index))]
-        pressure=[[] for i in range(len(self.node_index))]
+        flow=[[] for i in range(self.parameters['num_mes_links'])]
         head=[[] for i in range(len(self.node_index))]
+        energy=[[] for i in range(self.parameters['num_pumps'])]
         error = []
         while True:
             ret, t = et.ENrunH()
@@ -125,18 +133,89 @@ class Epa:
                     #print(self.link_index[i])
                     ret, p = et.ENgetlinkvalue(self.link_index[i], et.EN_FLOW)
                     flow[i].append(p)
-            for i in range(0, len(self.node_index)):
-                if self.parameters['hydraulic_values'][1] == 'pressure':
-                    ret, p = et.ENgetnodevalue(self.node_index[i], et.EN_PRESSURE)
-                    pressure[i].append(p)
-                if self.parameters['hydraulic_values'][2] == 'head':
+
+            if self.parameters['hydraulic_values'][2] == 'head':
+                for i in range(0, len(self.node_index)):
                     ret, p = et.ENgetnodevalue(self.node_index[i], et.EN_HEAD)
                     head[i].append(p)
+
+            if self.parameters['hydraulic_values'][1] == 'energy':
+                for i in range(0, self.parameters['num_pumps']):
+                    ret, p = et.ENgetlinkvalue(self.pumps_index[i], et.EN_ENERGY)
+                    energy[i].append(p)
+
             ret, tstep = et.ENnextH()
             if (tstep <= 0):
                 break
         ret = et.ENcloseH()
-        return flow, pressure, head, error, time
+        return flow, energy, head, error, time
 
+
+    def generate_random(self):
+
+        pump_control = []
+        for ii in range(0, self.parameters['num_pumps'] + 1):
+            pump_control.append([np.random.randint(50, 100) / 100])
+        self.random['pump_control'] = pump_control
+
+        demand_val = []
+        for ii in range(0, self.parameters['num_demands'] + 1):
+            demand_val.append([np.random.randint(1, 100) / 100])
+        self.random['demand_val'] = demand_val
+
+        tanks_init_val = []
+        for ii in range(0, self.parameters['num_tanks']):
+            tanks_init_val.append(np.random.randint(self.parameters['min_tanks_lev'][ii] * 10,
+                                                    self.parameters['max_tanks_lev'][ii] * 10) / 10)
+        self.random['tanks_init_val'] = tanks_init_val
+
+        for ii in range(self.parameters['num_demands']):
+            self.data['demand_input_' + self.parameters['demand_patterns'][ii]].append(demand_val[ii][0])
+
+        for ii in range(self.parameters['num_pumps']):
+            self.data['pump_input_' + self.parameters['pumps_names'][ii]].append(pump_control[ii][0])
+
+        for ii in range(self.parameters['num_tanks']):
+            self.data['tank_input_' + self.parameters['tanks_names'][ii]].append(tanks_init_val[ii])
+
+        self.parameters['initial_tanks'] = tanks_init_val
+
+        self.parameters['demand_pattern_values'] = demand_val
+        self.parameters['pumps_pattern_values'] = pump_control
+
+    def insert_data(self, head,flow, energy, error):
+        for ii in range(0, self.parameters['num_mes_nodes'] - self.parameters['num_tanks'] + 1):
+            self.data['head_output_' + self.parameters['mes_nodes_names'][ii]].append(head[ii][0])
+
+        for ii in range(self.parameters['num_mes_nodes'] - self.parameters['num_tanks'],
+                        self.parameters['num_mes_nodes']):
+            self.data['tank_output_' + self.parameters['tanks_names'][
+                self.parameters['num_mes_nodes'] - ii - 1]].append(head[ii][0])
+
+        for ii in range(self.parameters['num_mes_links']):
+            self.data['flow_output_' + self.parameters['mes_links_names'][ii]].append(flow[ii][0])
+
+        for ii in range(self.parameters['num_pumps']):
+            self.data['energy_output_' + self.parameters['pumps_names'][ii]].append(energy[ii][0])
+        self.data['error_output'].append(error[0])
+    def get_data(self):
+
+        self.prepare_empty_dict_to_comput()
+
+        self.open_epanet()
+        self.get_set_parameters()
+
+        for i in tqdm(range(1, self.parameters['number_iteration'])):
+            #print(i)
+            self.generate_random()
+            self.set_tank_inital()
+            self.set_patern_values()
+
+            [flow, energy, head, error, time] = self.get_hydraulic_values()
+
+            self.insert_data(head , flow , energy , error)
+
+
+        self.close_epanet()
 if __name__ == '__main__':
     print('To jest biblioteka pomocna przy generowaniu wyników z Epanetu')
