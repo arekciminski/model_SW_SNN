@@ -1,4 +1,4 @@
-  Page 1                                    Wed May 10 20:43:00 2023
+  Page 1                                    Thu May 11 11:38:22 2023
 
   ******************************************************************
   *                           E P A N E T                          *
@@ -7,6 +7,8 @@
   *                         Version 2.00.12                        *
   ******************************************************************
   
-  Analysis begun Wed May 10 20:43:00 2023
+  Analysis begun Thu May 11 11:38:22 2023
 
-  Analysis ended Wed May 10 20:43:00 2023
+  WARNING: Pump 1 closed because cannot deliver head at 0:00:00 hrs.
+  
+  Analysis ended Thu May 11 11:38:22 2023
