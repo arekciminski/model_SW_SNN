@@ -38,6 +38,9 @@ t = datetime.datetime.now()
 ep.get_data()
 #print(datetime.datetime.now()-t)
 
+for key in ep.data.keys():
+    print(ep.data[key])
+
 keis = ['tank_output_180','tank_input_180', 'pump_input_F1', 'pump_input_K1', 'pump_input_P1', 'demand_input_par2', 'demand_input_kar2']
 
 for key in ep.data.keys():
