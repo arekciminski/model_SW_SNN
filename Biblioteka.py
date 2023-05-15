@@ -130,23 +130,24 @@ class Epa:
         error = []
         while True:
             ret, t = et.ENrunH()
-            error.append(ret)
-            time.append(t)
-            if self.parameters['hydraulic_values'][0] == 'flow':
-                for i in range(0,len(self.link_index)):
-                    #print(self.link_index[i])
-                    ret, p = et.ENgetlinkvalue(self.link_index[i], et.EN_FLOW)
-                    flow[i].append(p)
+            if t%self.parameters['hydraulic_step_s']==0:
+                error.append(ret)
+                time.append(t)
+                if self.parameters['hydraulic_values'][0] == 'flow':
+                    for i in range(0,len(self.link_index)):
+                        #print(self.link_index[i])
+                        ret, p = et.ENgetlinkvalue(self.link_index[i], et.EN_FLOW)
+                        flow[i].append(p)
 
-            if self.parameters['hydraulic_values'][2] == 'head':
-                for i in range(0, len(self.node_index)):
-                    ret, p = et.ENgetnodevalue(self.node_index[i], et.EN_HEAD)
-                    head[i].append(p)
+                if self.parameters['hydraulic_values'][2] == 'head':
+                    for i in range(0, len(self.node_index)):
+                        ret, p = et.ENgetnodevalue(self.node_index[i], et.EN_HEAD)
+                        head[i].append(p)
 
-            if self.parameters['hydraulic_values'][1] == 'energy':
-                for i in range(0, self.parameters['num_pumps']):
-                    ret, p = et.ENgetlinkvalue(self.pumps_index[i], et.EN_ENERGY)
-                    energy[i].append(p)
+                if self.parameters['hydraulic_values'][1] == 'energy':
+                    for i in range(0, self.parameters['num_pumps']):
+                        ret, p = et.ENgetlinkvalue(self.pumps_index[i], et.EN_ENERGY)
+                        energy[i].append(p)
 
             ret, tstep = et.ENnextH()
             if (tstep <= 0):
@@ -175,14 +176,12 @@ class Epa:
             self.random['demand_val'].append(demand_val)
             self.data['demand_input_' + self.parameters['demand_patterns_names'][ii]].append(demand_val)
 
+        tanks_init_val = []
         for ii in range(0, self.parameters['num_tanks']):
-            tanks_init_val = []
             tanks_init_val.append(random.randint(self.parameters['min_tanks_lev'][ii] * 10,
                                                  self.parameters['max_tanks_lev'][ii] * 10) / 10)
-            self.random['tanks_init_val'].append(tanks_init_val)
-            self.data['tank_input_' + self.parameters['tanks_names'][ii]].append(tanks_init_val)
 
-        #print(demand_val.flatten())
+        self.random['tanks_init_val'].append(tanks_init_val)
 
     def insert_data(self, head,flow, energy, error, time):
 
@@ -194,6 +193,14 @@ class Epa:
             self.data['tank_output_' + self.parameters['tanks_names'][
                 self.parameters['num_mes_nodes'] - ii - 1]].append(head[ii])
 
+        for ii in range(0, self.parameters['num_tanks']):
+            temp_tank_init = []
+            for i in range(0, self.parameters['time_duration_h']):
+                temp_tank_init.append(self.random['tanks_init_val'][ii][0])
+                #print([i,ii,temp_tank_init])
+            self.data['tank_input_' + self.parameters['tanks_names'][ii]].append(temp_tank_init)
+
+
         for ii in range(self.parameters['num_mes_links']):
             self.data['flow_output_' + self.parameters['mes_links_names'][ii]].append(flow[ii])
 
@@ -204,9 +211,21 @@ class Epa:
 
         self.data['error_output'].append(error)
 
-    def proper_data(self,flow, energy, head, error, time):
-        print(time%self.parameters['hydraulic_step_s'])
+    def fix_data(self,flow, energy, head, error, time):
 
+        for i in range(len(flow)):
+            flow[i] = flow[i][:-1]
+
+        for i in range(len(energy)):
+            energy[i] = energy[i][:-1]
+
+        for i in range(len(head)):
+            head[i] = head[i][:-1]
+
+        error = error[:-1]
+        time = time[:-1]
+
+        return flow, energy, head, error, time
 
 
     def get_data(self):
@@ -225,7 +244,7 @@ class Epa:
 
             [flow, energy, head, error, time] = self.get_hydraulic_values()
 
-            [flow, energy, head, error, time] = self.proper_data(flow, energy, head, error, time)
+            [flow, energy, head, error, time] = self.fix_data(flow, energy, head, error, time)
 
             self.insert_data(head , flow , energy , error,time)
 

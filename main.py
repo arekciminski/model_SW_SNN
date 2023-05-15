@@ -22,7 +22,7 @@ parameters = {
     'min_tanks_lev':[1.2],
     'max_tanks_lev':[5],
     'hydraulic_values': ['flow', 'energy', 'head'],
-    'number_iteration':1
+    'number_iteration':10
 }
 
 parameters['num_mes_links'] = len(parameters['mes_links_names'])
@@ -40,11 +40,6 @@ ep.get_data()
 
 keis = ['tank_output_180','tank_input_180', 'pump_input_F1', 'pump_input_K1', 'pump_input_P1', 'demand_input_par2', 'demand_input_kar2']
 
-
-'''for ke in keis:
-    print(ke,ep.data[ke])'''
-
-
 for key in ep.data.keys():
     temp=[]
    # try:
@@ -54,13 +49,7 @@ for key in ep.data.keys():
         for i in range(parameters['number_iteration']):
             temp += ep.data[key][i]
     ep.data[key] = temp
-    print(len(ep.data[key]))
 
-#for key in ep.data.keys():
-#    print(key,ep.data[key])
-
-
-'''df = pd.DataFrame(ep.data)
+df = pd.DataFrame(ep.data)
 df = df.reset_index(drop = True)
 df.to_csv('dane_do_uczenia_'+str(parameters['number_iteration'])+'.csv',decimal =',',sep=';')
-'''
