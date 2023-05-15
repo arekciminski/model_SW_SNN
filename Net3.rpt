@@ -1,4 +1,4 @@
-  Page 1                                    Mon May 15 12:07:18 2023
+  Page 1                                    Mon May 15 16:54:24 2023
 
   ******************************************************************
   *                           E P A N E T                          *
@@ -7,48 +7,267 @@
   *                         Version 2.00.12                        *
   ******************************************************************
   
-  Analysis begun Mon May 15 12:07:18 2023
+  Analysis begun Mon May 15 16:54:24 2023
 
+  WARNING: Pump P1 closed because cannot deliver head at 1:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 2:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 3:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 4:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 6:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 7:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 7:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 8:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 11:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 13:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 15:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 16:16:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 17:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 17:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 18:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 18:39:59 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 19:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 19:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 21:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 23:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
+  
   WARNING: Pump P1 closed because cannot deliver head at 0:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 2:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 2:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 2:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 3:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 4:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 5:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 6:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 6:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 7:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 8:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 11:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 11:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 12:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 13:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 13:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 15:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 15:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 16:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 17:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 19:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 19:38:55 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 20:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 20:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 23:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 23:11:31 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 23:11:31 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 0:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 1:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 3:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 4:00:00 hrs.
   WARNING: Pump K1 closed because cannot deliver head at 4:00:00 hrs.
   
-  WARNING: Pump K1 closed because cannot deliver head at 5:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 5:00:00 hrs.
   
-  WARNING: Pump K1 closed because cannot deliver head at 5:35:07 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 6:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 7:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 7:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 8:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 9:54:32 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 8:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 10:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 11:00:00 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 11:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 12:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 12:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 13:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 13:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 15:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 16:00:00 hrs.
   
   WARNING: Pump P1 closed because cannot deliver head at 17:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 18:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 17:36:58 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 17:36:58 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 19:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 19:09:57 hrs.
   
   WARNING: Pump P1 closed because cannot deliver head at 20:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 22:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 22:36:13 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 22:22:36 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 22:22:36 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 23:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 23:04:19 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 0:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 2:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 2:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 3:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 3:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 4:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 4:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 5:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 6:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 8:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 9:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 10:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 11:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 11:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 13:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 13:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 14:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 14:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 16:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 17:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 18:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 19:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 20:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 20:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 22:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 0:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 0:00:00 hrs.
+  
+  WARNING: Negative pressures at 0:55:57 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 0:55:57 hrs.
+  WARNING: Pump P1 open but exceeds maximum flow at 0:55:57 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 2:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 3:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 4:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 5:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 6:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 7:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 8:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 8:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 9:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 9:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 10:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 10:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 11:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 11:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 12:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 13:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 15:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 16:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 17:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 17:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 19:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 20:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 21:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 21:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 0:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 2:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 3:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 4:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 5:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 5:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 6:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 9:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 10:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 10:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 11:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 13:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 14:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 16:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 16:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 17:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 20:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 21:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 22:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 22:28:17 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 23:00:00 hrs.
   WARNING: Pump P1 closed because cannot deliver head at 23:00:00 hrs.
@@ -57,98 +276,15 @@
   
   WARNING: Pump F1 closed because cannot deliver head at 0:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 1:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 1:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 2:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 2:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 3:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 4:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 7:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 8:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 12:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 13:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 15:00:00 hrs.
-  
-  WARNING: Pump K1 closed because cannot deliver head at 17:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 19:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 19:21:40 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 19:21:40 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 20:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 20:22:10 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 21:36:40 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 22:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 22:15:06 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 23:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 23:44:26 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 23:44:26 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 0:00:00 hrs.
-  
-  WARNING: Pump K1 closed because cannot deliver head at 1:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 2:00:00 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 2:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 4:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 5:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 5:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 8:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 8:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 9:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 10:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 10:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 13:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 17:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 19:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 20:00:00 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 20:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 21:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 0:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 1:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 1:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 2:00:00 hrs.
-  
   WARNING: Pump F1 closed because cannot deliver head at 4:00:00 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 4:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 5:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 5:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 6:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 6:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 7:00:00 hrs.
   WARNING: Pump P1 closed because cannot deliver head at 7:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 8:00:00 hrs.
@@ -157,310 +293,136 @@
   WARNING: Pump F1 closed because cannot deliver head at 9:00:00 hrs.
   WARNING: Pump P1 closed because cannot deliver head at 9:00:00 hrs.
   
-  WARNING: Pump K1 closed because cannot deliver head at 10:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 11:00:00 hrs.
   
-  WARNING: Pump K1 closed because cannot deliver head at 12:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 12:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 13:00:00 hrs.
   WARNING: Pump P1 closed because cannot deliver head at 13:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 14:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 15:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 15:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 16:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 16:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 17:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 17:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 18:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 18:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 20:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 22:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 23:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 0:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 0:00:00 hrs.
+  
+  WARNING: Pump K1 closed because cannot deliver head at 1:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 2:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 2:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 4:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 5:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 5:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 7:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 7:00:00 hrs.
+  
+  WARNING: Pump P1 closed because cannot deliver head at 8:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 12:00:00 hrs.
+  
   WARNING: Pump P1 closed because cannot deliver head at 14:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 15:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 15:00:00 hrs.
   
-  WARNING: Pump K1 closed because cannot deliver head at 16:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 16:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 17:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 18:00:00 hrs.
   WARNING: Pump P1 closed because cannot deliver head at 18:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 19:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 19:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 21:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 20:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 23:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 21:00:00 hrs.
+  
+  WARNING: Pump F1 closed because cannot deliver head at 22:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 22:00:00 hrs.
+  
   WARNING: Pump P1 closed because cannot deliver head at 23:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 0:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 0:00:00 hrs.
+  WARNING: Negative pressures at 1:00:00 hrs.
+  WARNING: Pump P1 open but exceeds maximum flow at 1:00:00 hrs.
   
-  WARNING: Pump K1 closed because cannot deliver head at 1:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 2:00:00 hrs.
   
-  WARNING: Pump K1 closed because cannot deliver head at 3:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 4:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 3:26:54 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 3:26:54 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 4:00:00 hrs.
-  
+  WARNING: Pump F1 closed because cannot deliver head at 5:00:00 hrs.
   WARNING: Pump K1 closed because cannot deliver head at 5:00:00 hrs.
   
-  WARNING: Pump K1 closed because cannot deliver head at 5:16:52 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 7:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 6:00:00 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 6:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 9:00:00 hrs.
   WARNING: Pump P1 closed because cannot deliver head at 9:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 10:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 11:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 11:00:00 hrs.
-  
-  WARNING: Pump K1 closed because cannot deliver head at 14:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 14:22:32 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 14:22:32 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 15:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 16:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 16:27:53 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 17:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 18:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 20:07:59 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 21:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 21:11:22 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 22:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 22:40:50 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 23:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
-  
-  WARNING: Pump K1 closed because cannot deliver head at 1:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 2:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 2:08:25 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 3:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 4:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 5:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 5:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 6:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 10:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 10:00:00 hrs.
   
   WARNING: Pump P1 closed because cannot deliver head at 12:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 14:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 14:18:57 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 15:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 15:00:00 hrs.
-  
-  WARNING: Pump K1 closed because cannot deliver head at 17:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 17:02:19 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 17:02:19 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 18:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 18:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 20:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 20:10:26 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 20:10:26 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 21:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 22:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 23:00:00 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 23:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 1:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 2:00:00 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 2:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 3:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 4:25:08 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 5:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 5:06:27 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 5:06:27 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 6:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 6:28:36 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 7:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 9:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 10:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 10:14:31 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 10:14:31 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 12:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 12:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 13:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 15:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 15:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 16:00:00 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 16:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 17:00:00 hrs.
-  
+  WARNING: Pump F1 closed because cannot deliver head at 19:00:00 hrs.
   WARNING: Pump P1 closed because cannot deliver head at 19:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 19:15:03 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 20:00:00 hrs.
-  
   WARNING: Pump F1 closed because cannot deliver head at 21:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 23:00:00 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 23:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
-  
-  WARNING: Pump K1 closed because cannot deliver head at 1:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 2:00:00 hrs.
-  WARNING: Pump K1 closed because cannot deliver head at 2:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 3:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 4:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 5:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 7:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 8:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 9:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 10:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 12:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 13:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 15:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 17:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 17:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 19:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 20:00:00 hrs.
-  
-  WARNING: Pump K1 closed because cannot deliver head at 21:00:00 hrs.
-  
   WARNING: Pump F1 closed because cannot deliver head at 22:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 22:00:00 hrs.
   
-  WARNING: Pump K1 closed because cannot deliver head at 23:00:00 hrs.
+  WARNING: Negative pressures at 0:00:00 hrs.
+  WARNING: Pump P1 open but exceeds maximum flow at 0:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 1:00:00 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 1:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 0:00:00 hrs.
-  
-  WARNING: Pump K1 closed because cannot deliver head at 1:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 3:00:00 hrs.
   WARNING: Pump P1 closed because cannot deliver head at 3:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 4:00:00 hrs.
+  WARNING: Pump K1 closed because cannot deliver head at 4:00:00 hrs.
   
+  WARNING: Pump F1 closed because cannot deliver head at 5:00:00 hrs.
   WARNING: Pump P1 closed because cannot deliver head at 5:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 6:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 6:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 7:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 8:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 9:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 10:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 12:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 11:00:00 hrs.
   
   WARNING: Pump P1 closed because cannot deliver head at 14:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 17:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 15:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 17:39:24 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 18:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 19:00:00 hrs.
   
-  WARNING: Pump F1 closed because cannot deliver head at 21:07:49 hrs.
+  WARNING: Pump P1 closed because cannot deliver head at 20:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 22:00:00 hrs.
+  WARNING: Pump F1 closed because cannot deliver head at 22:00:00 hrs.
   
-  WARNING: Pump P1 closed because cannot deliver head at 22:29:36 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 23:00:00 hrs.
   WARNING: Pump P1 closed because cannot deliver head at 23:00:00 hrs.
   
   WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
   
-  WARNING: Pump K1 closed because cannot deliver head at 0:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 1:00:00 hrs.
-  
-  WARNING: Pump K1 closed because cannot deliver head at 3:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 4:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 5:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 7:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 9:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 11:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 12:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 14:00:00 hrs.
-  
-  WARNING: Pump P1 closed because cannot deliver head at 14:45:26 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 15:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 15:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 16:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 16:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 17:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 20:00:00 hrs.
-  WARNING: Pump P1 closed because cannot deliver head at 20:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 21:00:00 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 23:01:26 hrs.
-  
-  WARNING: Pump F1 closed because cannot deliver head at 24:00:00 hrs.
-  
-  Analysis ended Mon May 15 12:07:18 2023
+  Analysis ended Mon May 15 16:54:24 2023
