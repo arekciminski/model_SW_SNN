@@ -7,22 +7,23 @@ import datetime
 
 
 file_name = "chojnice_kwiecien_obiekt.inp"
-
+file_name_pattern = 'pattern_bounds.csv'
 parameters = {
     'file_name': file_name,
+    'pattern_file_name': file_name_pattern,
     'mes_links_names': ['F1','K1','P1'],
     'mes_nodes_names': ['083','158','180'],
     'pumps_names': ['F1','K1','P1'],
     'pumps_patterns_names': ['f1','k1','p1'],
     'demand_patterns_names': ['par2','kar2'],
-    'time_duration_h': 24,  # [h]
+    'time_duration_h': 30*720,  # [h]
     'hydraulic_step_s': 3600,  # [h]
     'tanks_names': ['180'],
     'initial_tanks_lev': [3.58],
     'min_tanks_lev':[1.2],
     'max_tanks_lev':[5],
     'hydraulic_values': ['flow', 'energy', 'head'],
-    'number_iteration':10
+    'number_iteration':1
 }
 
 parameters['num_mes_links'] = len(parameters['mes_links_names'])
@@ -38,8 +39,8 @@ t = datetime.datetime.now()
 ep.get_data()
 #print(datetime.datetime.now()-t)
 
-for key in ep.data.keys():
-    print(ep.data[key])
+'''for key in ep.data.keys():
+    print(ep.data[key])'''
 
 keis = ['tank_output_180','tank_input_180', 'pump_input_F1', 'pump_input_K1', 'pump_input_P1', 'demand_input_par2', 'demand_input_kar2']
 
@@ -55,4 +56,4 @@ for key in ep.data.keys():
 
 df = pd.DataFrame(ep.data)
 df = df.reset_index(drop = True)
-df.to_csv('dane_do_uczenia_'+str(parameters['number_iteration'])+'.csv',decimal =',',sep=';')
+df.to_csv('dane_do_uczenia_'+str(parameters['time_duration_h'])+'_'+str(parameters['number_iteration'])+'.csv',decimal =',',sep=';')

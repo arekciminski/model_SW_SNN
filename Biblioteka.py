@@ -91,6 +91,7 @@ class Epa:
         self.get_node_index()
         self.get_pattern_index()
         self.set_time_duration()
+        self.read_pattern_bounds_file()
 
     def prepare_empty_dict_to_comput(self):
 
@@ -171,8 +172,8 @@ class Epa:
 
         for ii in range(0, self.parameters['num_demands']):
             demand_val = []
-            for i in range(1, self.parameters['time_duration_h'] + 1):
-                demand_val.append(random.randint(1, 100) / 100)
+            for i in range(0, self.parameters['time_duration_h'] ):
+                demand_val.append(random.randint(int(self.pattern_bounds[i%24][0]*1000), int(self.pattern_bounds[i%24][1]*1000)) / 1000)
             self.random['demand_val'].append(demand_val)
             self.data['demand_input_' + self.parameters['demand_patterns_names'][ii]].append(demand_val)
 
@@ -227,6 +228,13 @@ class Epa:
 
         return flow, energy, head, error, time
 
+    def read_pattern_bounds_file(self):
+        with open(self.parameters['pattern_file_name']) as f:
+            lines = f.readlines()
+        self.pattern_bounds = []
+        for l in lines:
+            self.pattern_bounds.append([float(l.split(';')[1]),float(l.split(';')[2])])
+
 
     def get_data(self):
 
@@ -240,7 +248,7 @@ class Epa:
             self.generate_random()
             self.set_tank_inital()
             self.set_patern_values()
-            #self.save_temp_file()
+            self.save_temp_file()
 
             [flow, energy, head, error, time] = self.get_hydraulic_values()
 
